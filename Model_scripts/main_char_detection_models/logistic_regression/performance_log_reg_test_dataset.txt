@@ -1,0 +1,21 @@
+main char detection :
+
+(venv38) PS D:\Pycharm Projects\Hand_pose_estimation\new_project\main_char_det_models\logistic_regression> python .\test_logistic_regression.py
+=== Classification Report ===
+                  precision    recall  f1-score   support
+
+Active_main_char       0.67      1.00      0.80       265
+   Non_main_char       1.00      0.50      0.67       265
+
+        accuracy                           0.75       530
+       macro avg       0.83      0.75      0.73       530
+    weighted avg       0.83      0.75      0.73       530
+
+Accuracy: 0.7509433962264151
+Precision (macro): 0.8337531486146096
+Recall (macro): 0.7509433962264151
+F1-score (macro): 0.734472969074982
+Confusion Matrix:
+ [[265   0]
+ [132 133]]
+(venv38) PS D:\Pycharm Projects\Hand_pose_estimation\new_project\main_char_det_models\logistic_regression> 

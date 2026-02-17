@@ -1,0 +1,21 @@
+(venv38) PS D:\Pycharm Projects\Hand_pose_estimation\new_project\hand_gesture_recognition\classifier_trained_on_dataset_mp_labelled\logistic_regression> python .\train_logistic_regression_location_invariant.py
+              precision    recall  f1-score   support
+
+give_me_sign       0.96      1.00      0.98       156
+   open_palm       0.99      0.99      0.99       192
+   thumbs_up       0.94      0.99      0.97       139
+unknown_pose       1.00      0.96      0.98       421
+
+    accuracy                           0.98       908
+   macro avg       0.97      0.99      0.98       908
+weighted avg       0.98      0.98      0.98       908
+
+Accuracy: 0.9801762114537445
+Precision (macro): 0.9720398343518707
+Recall (macro): 0.9873981678671314
+F1-score (macro): 0.9793317076765574
+Confusion Matrix:
+ [[156   0   0   0]
+ [  0 191   0   1]
+ [  1   0 138   0]
+ [  6   1   9 405]]

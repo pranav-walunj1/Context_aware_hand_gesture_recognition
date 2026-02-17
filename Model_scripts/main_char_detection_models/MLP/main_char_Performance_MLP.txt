@@ -1,0 +1,163 @@
+- for 20 epochs, 
+
+Epoch [1/20], Loss: 5.9142
+Epoch [2/20], Loss: 0.6444
+Epoch [3/20], Loss: 0.5066
+Epoch [4/20], Loss: 0.4365
+Epoch [5/20], Loss: 0.4130
+Epoch [6/20], Loss: 0.4038
+Epoch [7/20], Loss: 0.3689
+Epoch [8/20], Loss: 0.3240
+Epoch [9/20], Loss: 0.3434
+Epoch [10/20], Loss: 0.3201
+Epoch [11/20], Loss: 0.3202
+Epoch [12/20], Loss: 0.2985
+Epoch [13/20], Loss: 0.2928
+Epoch [14/20], Loss: 0.2766
+Epoch [15/20], Loss: 0.2780
+Epoch [16/20], Loss: 0.2785
+Epoch [17/20], Loss: 0.2712
+Epoch [18/20], Loss: 0.2644
+Epoch [19/20], Loss: 0.2386
+Epoch [20/20], Loss: 0.2555
+                    precision    recall  f1-score   support
+
+  Active_main_char       0.96      0.93      0.95       830
+Inactive_main_char       0.91      0.83      0.87       174
+     Non_main_char       0.93      0.98      0.95      1016
+
+          accuracy                           0.94      2020
+         macro avg       0.94      0.91      0.92      2020
+      weighted avg       0.94      0.94      0.94      2020
+
+Accuracy: 0.944059405940594
+Precision (macro): 0.9365251208189248
+Recall (macro): 0.910886418331485
+F1-score (macro): 0.9227411725905702
+Confusion Matrix:
+ [[770   3  57]
+ [ 16 144  14]
+ [ 12  11 993]]
+
+
+- For 30 epochs :
+
+Epoch [1/30], Loss: 7.6964
+Epoch [2/30], Loss: 0.7441
+Epoch [3/30], Loss: 0.5516
+Epoch [4/30], Loss: 0.5109
+Epoch [5/30], Loss: 0.4873
+Epoch [6/30], Loss: 0.4081
+Epoch [7/30], Loss: 0.3993
+Epoch [8/30], Loss: 0.3712
+Epoch [9/30], Loss: 0.3566
+Epoch [10/30], Loss: 0.3315
+Epoch [11/30], Loss: 0.3334
+Epoch [12/30], Loss: 0.3394
+Epoch [13/30], Loss: 0.3135
+Epoch [14/30], Loss: 0.3144
+Epoch [15/30], Loss: 0.2792
+Epoch [16/30], Loss: 0.2918
+Epoch [17/30], Loss: 0.2703
+Epoch [18/30], Loss: 0.2585
+Epoch [19/30], Loss: 0.2712
+Epoch [20/30], Loss: 0.2460
+Epoch [21/30], Loss: 0.2596
+Epoch [22/30], Loss: 0.2497
+Epoch [23/30], Loss: 0.2361
+Epoch [24/30], Loss: 0.2652
+Epoch [25/30], Loss: 0.2447
+Epoch [26/30], Loss: 0.2549
+Epoch [27/30], Loss: 0.2489
+Epoch [28/30], Loss: 0.2506
+Epoch [29/30], Loss: 0.2457
+Epoch [30/30], Loss: 0.2196
+                    precision    recall  f1-score   support
+
+  Active_main_char       0.95      0.95      0.95       830
+Inactive_main_char       0.99      0.83      0.91       174
+     Non_main_char       0.96      0.98      0.97      1016
+
+          accuracy                           0.95      2020
+         macro avg       0.97      0.92      0.94      2020
+      weighted avg       0.96      0.95      0.95      2020
+
+Accuracy: 0.9549504950495049
+Precision (macro): 0.9652623470094944
+Recall (macro): 0.9213093845197061
+F1-score (macro): 0.9409172954034434
+Confusion Matrix:
+ [[792   1  37]
+ [ 22 145   7]
+ [ 24   0 992]]
+
+- For 50 Epochs:
+
+Epoch [1/50], Loss: 6.3217
+Epoch [2/50], Loss: 0.6611
+Epoch [3/50], Loss: 0.5457
+Epoch [4/50], Loss: 0.4537
+Epoch [5/50], Loss: 0.4368
+Epoch [6/50], Loss: 0.4193
+Epoch [7/50], Loss: 0.3893
+Epoch [8/50], Loss: 0.4020
+Epoch [9/50], Loss: 0.3751
+Epoch [10/50], Loss: 0.3546
+Epoch [11/50], Loss: 0.3487
+Epoch [12/50], Loss: 0.3572
+Epoch [13/50], Loss: 0.3214
+Epoch [14/50], Loss: 0.3038
+Epoch [15/50], Loss: 0.3294
+Epoch [16/50], Loss: 0.3012
+Epoch [17/50], Loss: 0.3145
+Epoch [18/50], Loss: 0.3149
+Epoch [19/50], Loss: 0.3015
+Epoch [20/50], Loss: 0.2776
+Epoch [21/50], Loss: 0.2965
+Epoch [22/50], Loss: 0.2813
+Epoch [23/50], Loss: 0.2604
+Epoch [24/50], Loss: 0.2859
+Epoch [25/50], Loss: 0.2492
+Epoch [26/50], Loss: 0.2527
+Epoch [27/50], Loss: 0.2512
+Epoch [28/50], Loss: 0.2515
+Epoch [29/50], Loss: 0.2645
+Epoch [30/50], Loss: 0.2466
+Epoch [31/50], Loss: 0.2154
+Epoch [32/50], Loss: 0.2116
+Epoch [33/50], Loss: 0.2278
+Epoch [34/50], Loss: 0.2097
+Epoch [35/50], Loss: 0.2356
+Epoch [36/50], Loss: 0.2292
+Epoch [37/50], Loss: 0.2501
+Epoch [38/50], Loss: 0.2184
+Epoch [39/50], Loss: 0.2062
+Epoch [40/50], Loss: 0.2204
+Epoch [41/50], Loss: 0.2042
+Epoch [42/50], Loss: 0.2033
+Epoch [43/50], Loss: 0.1989
+Epoch [44/50], Loss: 0.2001
+Epoch [45/50], Loss: 0.2096
+Epoch [46/50], Loss: 0.1979
+Epoch [47/50], Loss: 0.2115
+Epoch [48/50], Loss: 0.2081
+Epoch [49/50], Loss: 0.2247
+Epoch [50/50], Loss: 0.2252
+                    precision    recall  f1-score   support
+
+  Active_main_char       0.94      0.97      0.95       830
+Inactive_main_char       0.99      0.83      0.90       174
+     Non_main_char       0.97      0.98      0.97      1016
+
+          accuracy                           0.96      2020
+         macro avg       0.97      0.92      0.94      2020
+      weighted avg       0.96      0.96      0.96      2020
+
+Accuracy: 0.9599009900990099
+Precision (macro): 0.9683908270079179
+Recall (macro): 0.9238848688263781
+F1-score (macro): 0.9435633947887457
+Confusion Matrix:
+ [[804   1  25]
+ [ 25 144   5]
+ [ 25   0 991]]

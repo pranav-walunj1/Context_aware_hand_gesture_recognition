@@ -1,0 +1,21 @@
+=== Classification Report ===
+                  precision    recall  f1-score   support
+
+Active_main_char       1.00      1.00      1.00       265
+   Non_main_char       1.00      1.00      1.00       265
+
+        accuracy                           1.00       530
+       macro avg       1.00      1.00      1.00       530
+    weighted avg       1.00      1.00      1.00       530
+
+
+=== Metrics on Test Dataset ===
+Accuracy: 1.0000
+Precision (macro): 1.0000
+Recall (macro): 1.0000
+F1-score (macro): 1.0000
+
+=== Confusion Matrix ===
+[[265   0]
+ [  0 265]]
+(venv38) PS D:\Pycharm Projects\Hand_pose_estimation\new_project\main_char_det_models\MLP> cd..

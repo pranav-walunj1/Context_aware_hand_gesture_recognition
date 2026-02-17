@@ -1,0 +1,83 @@
+- LogisticRegression(multi_class='multinomial', solver='lbfgs', class_weight='balanced', max_iter=500, random_state=42) :
+
+                    precision    recall  f1-score   support
+
+  Active_main_char       0.84      0.73      0.78       851
+Inactive_main_char       0.19      0.96      0.32       167
+     Non_main_char       0.87      0.38      0.53      1002
+
+          accuracy                           0.58      2020
+         macro avg       0.63      0.69      0.54      2020
+      weighted avg       0.80      0.58      0.62      2020
+
+Accuracy: 0.5762376237623762
+Precision (macro): 0.6347858554061471
+Recall (macro): 0.6917387317022828
+F1-score (macro): 0.5435745999033154
+Confusion Matrix:
+ [[622 175  54]
+ [  3 161   3]
+ [112 509 381]]
+
+
+
+- for LogisticRegression(multi_class='multinomial', solver='saga', class_weight='balanced', max_iter=500, random_state=42) : 
+
+
+D:\Pycharm Projects\Hand_pose_estimation\venv38\lib\site-packages\sklearn\linear_model\_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Number of iterations until convergence: [500]
+                    precision    recall  f1-score   support
+
+  Active_main_char       0.84      0.71      0.77       851
+Inactive_main_char       0.18      0.90      0.29       167
+     Non_main_char       0.85      0.39      0.53      1002
+
+          accuracy                           0.56      2020
+         macro avg       0.62      0.66      0.53      2020
+      weighted avg       0.79      0.56      0.61      2020
+
+Accuracy: 0.5643564356435643
+Precision (macro): 0.6232685603726731
+Recall (macro): 0.664277398981903
+F1-score (macro): 0.532225789074691
+Confusion Matrix:
+ [[602 184  65]
+ [ 13 150   4]
+ [ 98 516 388]]
+
+-  for clf = LogisticRegression(multi_class='multinomial', solver='lbfgs', class_weight='balanced', max_iter=2000, random_state=42) 
+AND by doing polynomial transform of features :
+# Step 4: Scale features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Step 4.5: Add polynomial features (degree=2 for quadratic, try degree=3 if needed)
+poly = PolynomialFeatures(degree=2, include_bias=False)
+X_poly = poly.fit_transform(X_scaled)
+
+# Step 5: Train-test split
+#X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_encoded, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_poly, y_encoded, test_size=0.2, random_state=42)
+
+The output was :
+
+Number of iterations until convergence: [516]
+                    precision    recall  f1-score   support
+
+  Active_main_char       1.00      0.97      0.98       851
+Inactive_main_char       0.87      1.00      0.93       167
+     Non_main_char       0.99      0.99      0.99      1002
+
+          accuracy                           0.98      2020
+         macro avg       0.95      0.99      0.97      2020
+      weighted avg       0.98      0.98      0.98      2020
+
+Accuracy: 0.9816831683168317
+Precision (macro): 0.953505754540259
+Recall (macro): 0.9862155829351873
+F1-score (macro): 0.9684048351000224
+Confusion Matrix:
+ [[826  16   9]
+ [  0 167   0]
+ [  4   8 990]]

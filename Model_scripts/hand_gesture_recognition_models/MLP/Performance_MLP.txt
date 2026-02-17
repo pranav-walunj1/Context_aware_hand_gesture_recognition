@@ -1,0 +1,107 @@
+- for 30 epochs :
+
+Epoch [1/30], Loss: 0.7621
+Epoch [2/30], Loss: 0.2814
+Epoch [3/30], Loss: 0.1825
+Epoch [4/30], Loss: 0.1280
+Epoch [5/30], Loss: 0.1170
+Epoch [6/30], Loss: 0.1030
+Epoch [7/30], Loss: 0.0874
+Epoch [8/30], Loss: 0.0874
+Epoch [9/30], Loss: 0.0844
+Epoch [10/30], Loss: 0.0668
+Epoch [11/30], Loss: 0.0715
+Epoch [12/30], Loss: 0.0585
+Epoch [13/30], Loss: 0.0548
+Epoch [14/30], Loss: 0.0552
+Epoch [15/30], Loss: 0.0498
+Epoch [16/30], Loss: 0.0508
+Epoch [17/30], Loss: 0.0497
+Epoch [18/30], Loss: 0.0466
+Epoch [19/30], Loss: 0.0446
+Epoch [20/30], Loss: 0.0404
+Epoch [21/30], Loss: 0.0366
+Epoch [22/30], Loss: 0.0425
+Epoch [23/30], Loss: 0.0375
+Epoch [24/30], Loss: 0.0363
+Epoch [25/30], Loss: 0.0352
+Epoch [26/30], Loss: 0.0292
+Epoch [27/30], Loss: 0.0329
+Epoch [28/30], Loss: 0.0287
+Epoch [29/30], Loss: 0.0274
+Epoch [30/30], Loss: 0.0345
+              precision    recall  f1-score   support
+
+give_me_sign       0.99      1.00      0.99       156
+   open_palm       0.99      0.99      0.99       192
+   thumbs_up       1.00      0.99      1.00       139
+unknown_pose       0.99      0.98      0.98       152
+
+    accuracy                           0.99       639
+   macro avg       0.99      0.99      0.99       639
+weighted avg       0.99      0.99      0.99       639
+
+Accuracy: 0.9921752738654147
+Precision (macro): 0.9922221014264957
+Recall (macro): 0.9919651449892717
+F1-score (macro): 0.9920776203617022
+Confusion Matrix:
+ [[156   0   0   0]
+ [  0 191   0   1]
+ [  0   0 138   1]
+ [  2   1   0 149]]
+
+
+
+
+- After adding more unknown poses into the dataset :
+Epoch [1/30], Loss: 0.6679
+Epoch [2/30], Loss: 0.2253
+Epoch [3/30], Loss: 0.1521
+Epoch [4/30], Loss: 0.1260
+Epoch [5/30], Loss: 0.1028
+Epoch [6/30], Loss: 0.0901
+Epoch [7/30], Loss: 0.0835
+Epoch [8/30], Loss: 0.0756
+Epoch [9/30], Loss: 0.0678
+Epoch [10/30], Loss: 0.0667
+Epoch [11/30], Loss: 0.0628
+Epoch [12/30], Loss: 0.0565
+Epoch [13/30], Loss: 0.0547
+Epoch [14/30], Loss: 0.0482
+Epoch [15/30], Loss: 0.0451
+Epoch [16/30], Loss: 0.0456
+Epoch [17/30], Loss: 0.0465
+Epoch [18/30], Loss: 0.0440
+Epoch [19/30], Loss: 0.0444
+Epoch [20/30], Loss: 0.0371
+Epoch [21/30], Loss: 0.0356
+Epoch [22/30], Loss: 0.0339
+Epoch [23/30], Loss: 0.0289
+Epoch [24/30], Loss: 0.0320
+Epoch [25/30], Loss: 0.0323
+Epoch [26/30], Loss: 0.0369
+Epoch [27/30], Loss: 0.0275
+Epoch [28/30], Loss: 0.0324
+Epoch [29/30], Loss: 0.0296
+Epoch [30/30], Loss: 0.0270
+              precision    recall  f1-score   support
+
+give_me_sign       0.99      1.00      1.00       156
+   open_palm       1.00      0.99      1.00       192
+   thumbs_up       0.97      0.99      0.98       139
+unknown_pose       1.00      0.99      0.99       421
+
+    accuracy                           0.99       908
+   macro avg       0.99      0.99      0.99       908
+weighted avg       0.99      0.99      0.99       908
+
+Accuracy: 0.9922907488986784
+Precision (macro): 0.9901692175421712
+Recall (macro): 0.993930234375445
+F1-score (macro): 0.9920143214162462
+Confusion Matrix:
+ [[156   0   0   0]
+ [  0 191   0   1]
+ [  0   0 138   1]
+ [  1   0   4 416]]
