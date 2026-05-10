@@ -203,7 +203,7 @@ If you use this work, please cite:
   address   = {Singapore},
   publisher = {IEEE},
   doi       = {10.1109/RAAI67517.2025.11423282}D:
-  
+
 }
 ```
 
@@ -213,3 +213,7 @@ If you use this work, please cite:
 
 Funded by the **WSKL Chair, RPTU Kaiserslautern-Landau**.  
 Special thanks to the RPTU Kaiserslautern colleagues, DFKI research team, all study participants, and the conference reviewers.
+
+## License
+ 
+Released under the MIT License — see [`LICENSE`](LICENSE) for details.
