@@ -200,7 +200,10 @@ If you use this work, please cite:
   author    = {Walunj, Snehal and Walunj, Pranav and Abubaid, Khalil and Legler, Tatjana and Ruskowski, Martin},
   booktitle = {Proceedings of the International Conference on Robotics, Automation and Artificial Intelligence (RAAI)},
   year      = {2025},
-  address   = {Singapore}
+  address   = {Singapore},
+  publisher = {IEEE},
+  doi       = {10.1109/RAAI67517.2025.11423282}D:
+  
 }
 ```
 
