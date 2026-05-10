@@ -56,6 +56,14 @@ This project contains codes for model training scripts and dataset creation scri
 - torch-2.4.1, Ultralytics 8.3.202, ZED_SDK_Windows10_cuda10.2_v3.8.2 
 - Other dependencies listed in `requirements.txt`
 
+### Installation
+ 
+```bash
+git clone https://github.com/pranav-walunj1/Context_aware_hand_gesture_recognition.git
+cd "Dataset & Scripts"
+pip install -r requirements.txt
+```
+
 ## How to run
 1. Prepare dataset in the correct folder structure
 2. Create the venv based on the libraries from `requirements.txt`, and activate it
