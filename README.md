@@ -4,6 +4,12 @@
 > Snehal Walunj, Pranav Walunj, Khalil Abubaid, Tatjana Legler, Martin Ruskowski  
 > German Research Center for Artificial Intelligence (DFKI) · University of Kaiserslautern-Landau (RPTU), Germany
 
+> 📄 **Paper:** [IEEE Xplore — DOI: 10.1109/RAAI67517.2025.11423282](https://doi.org/10.1109/RAAI67517.2025.11423282)
+
+![Two-step hierarchical pipeline for user-engagement-aware gesture recognition](assets/architecture.png)
+ 
+*Figure 1 — Lightweight hybrid architecture: ZED-2i body-skeleton tracking feeds a Random Forest engagement classifier (Stage 1); only when the main worker is confirmed engaged does the MediaPipe + MLP gesture recognizer (Stage 2) activate and dispatch the corresponding robot command.*
+
 ---
 
 ## Overview
@@ -59,7 +65,7 @@ ZED-2i Camera
 | Component | Details |
 |-----------|---------|
 | Sensor | ZED-2i stereo camera |
-| Input | 18 body 3D keypoints (skeleton) over 3-frame temporal window |
+| Input | 12 upper-body 3D keypoints (filtered from 18 ZED-tracked keypoints) |
 | Classifier | Random Forest |
 | Output | `Engaged` / `Disengaged` / `Not Present` |
 | Stability Window | 3 consecutive seconds of `Engaged` predictions before Stage 2 activates |
@@ -96,8 +102,8 @@ ZED-2i Camera
 
 ## Dataset
 
-**Participants:** 3 participants · Ages 25–35 · Heights 150–182 cm  
-**Recording:** 8 sessions · ~2 hours total
+**Participants:** 5 participants · Ages 25–35 · Heights 150–182 cm  
+**Recording:** 8 sessions · ~8 hours total
 
 ### 5 Collection Scenarios
 
@@ -122,6 +128,8 @@ ZED-2i Camera
 
 ### Stage 1 : Engagement Classification
 
+![Stage 1 classifier comparison](assets/stage1_classifier_comparison.png)
+
 | Classifier | Accuracy |
 |-----------|----------|
 | Logistic Regression | 88.5% |
@@ -132,6 +140,8 @@ ZED-2i Camera
 
 ### Stage 2 : Gesture Recognition
 
+![Stage 2 classifier comparison](assets/stage2_classifier_comparison.png)
+
 | Classifier | Accuracy |
 |-----------|----------|
 | Logistic Regression | 91.2% |
@@ -141,6 +151,8 @@ ZED-2i Camera
 **MLP Full Metrics:** Precision: 0.99 · Recall: 0.97 · F1-Score: 0.98
 
 ### End-to-End Pipeline Performance
+
+![End-to-end pipeline breakdown](assets/end_to_end_results.png)
 
 Evaluated on **60 balanced test instances** across all 3 engagement states × 4 gesture types × 5 samples each.
 
